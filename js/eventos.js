@@ -66,7 +66,7 @@ const eliminarasiento = (id) => {
         asientoeliminado.addEventListener('submit',(event)=>{
             event.preventDefault();
             let asientonroelim = parseInt(asientoeliminado.children[0].value)-1
-            if(asientonroelim <= listadoasientos.length && asientonroelim >= 0){
+            if(asientonroelim <= listadoasientos.length-1 && asientonroelim >= 0){
             listadoasientos.splice(asientonroelim,1)
             botonasientos.click()
             console.log(listadoasientos)}
